@@ -136,7 +136,7 @@ console.assert(reverse("we don't want no trouble") === "elbuort on tnaw t'nod ew
  var fizzbuzz = function(num){
  		var fizz = ""
      for(var i = 1; i <= num; i++){
-         log(num)
+
          if(i % 3 != 0 && i % 5 != 0){
              fizz = fizz + '.'
          }
@@ -153,7 +153,7 @@ console.assert(reverse("we don't want no trouble") === "elbuort on tnaw t'nod ew
 
 
      }
-     log(fizz)
+
  return fizz
  }
 
