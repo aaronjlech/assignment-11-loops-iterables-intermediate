@@ -223,21 +223,24 @@ console.assert(findLongestWord("don't mess with Texas") === "Texas")
  * write a function that returns the Greatest Common Denominator of two numbers
  * - if no GCD exists, return 1
  */
-var GCD = function(num1, num2){
-      var comDom = 0
-   for(var i = 0; i < num1; i++){
-      if(num1 % i === 0){
+ var GCD = function(num1, num2){
+       var comNomOne = 1
 
-         return comDom
-      }
-      else{comDom = 1}
+    for(var i = 1; i < num1; i++){
+       if(num1 % i === 0 && num2 % i === 0){
 
-
-   }
-
+          comNomOne = i
+          log(comNomOne)
+       }
+       // else{return 1}
 
 
-}
+    }
+
+
+ return comNomOne
+ }
+
 
 
 console.assert(GCD(5,1) === 1);
