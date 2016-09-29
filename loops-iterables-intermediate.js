@@ -107,8 +107,8 @@ console.assert(isVowel("E") === true);
  */
  // input string
  var reverse = function(str){
-	rvsstr = ""
-	strToArr = str.split("")
+	var rvsstr = ""
+	var strToArr = str.split("")
 
         strToArr = strToArr.reverse()
 
@@ -134,14 +134,28 @@ console.assert(reverse("we don't want no trouble") === "elbuort on tnaw t'nod ew
  * - for every number that is a multiple of 3 and 5, return "FizZBuzZ"
  */
  var fizzbuzz = function(num){
+ 		var fizz = ""
+     for(var i = 1; i <= num; i++){
+         log(num)
+         if(i % 3 != 0 && i % 5 != 0){
+             fizz = fizz + '.'
+         }
+     if(i % 3  ===  0 && i % 5 !=  0){
+        fizz = fizz + "fizz"
 
-    for(var i = 0; i < num; i++)
-    if(num != i % 3 && num != % i 5){
-       return '.'
-    }
+
+     }else if(i % 5 === 0 && i % 3 != 0){
+         fizz = fizz + "buzz"
+     }
+         else if(i % 3 === 0 && i % 5 === 0){
+             fizz = fizz + "FizZBuzZ"
+         }
 
 
-}
+     }
+     log(fizz)
+ return fizz
+ }
 
 
 
@@ -211,8 +225,8 @@ console.assert(findLongestWord("don't mess with Texas") === "Texas")
  */
 var GCD = function(num1, num2){
       var comDom = 0
-   for(var i = 0; i < num1.length; i++){
-      if(num1 % num1[i] === 0){
+   for(var i = 0; i < num1; i++){
+      if(num1 % i === 0){
 
          return comDom
       }
