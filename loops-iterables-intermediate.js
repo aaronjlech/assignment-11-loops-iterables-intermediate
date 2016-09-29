@@ -230,7 +230,7 @@ console.assert(findLongestWord("don't mess with Texas") === "Texas")
        if(num1 % i === 0 && num2 % i === 0){
 
           comNomOne = i
-          log(comNomOne)
+      
        }
        // else{return 1}
 
